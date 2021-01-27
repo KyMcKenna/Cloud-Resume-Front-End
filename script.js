@@ -1,4 +1,4 @@
-<script>
+
     function getLoadCount(){
 
         // call an AWS gateway API, that then calls an AWS Lambda
@@ -35,4 +35,3 @@
 
 
 
-</script>
