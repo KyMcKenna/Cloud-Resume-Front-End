@@ -7,7 +7,7 @@
         // Note call is synchronous, delays should be minimal
         var req = new XMLHttpRequest();  
         req.open('GET', 
-        "https://cimk9zx0ch.execute-api.ap-southeast-2.amazonaws.com/beta", 
+        "https://l3rri8o1fi.execute-api.us-east-1.amazonaws.com/Prod/count", 
         false);   
         req.send();  
         if(req.status == 200)
