@@ -14,10 +14,10 @@
             {  
                 len = req.responseText.length;
                 // response text has opening and closing double quotes
-                console.log(req.responseText.substring(0));
+                console.log(req.responseText.substring(1, len-1));
                 // set field in footer
                 document.getElementById("loadcount").textContent = 
-                    req.responseText.substring(0);
+                    req.responseText.substring(10, len-2);
             }
         else {
             // NOT OK response, so log in console
