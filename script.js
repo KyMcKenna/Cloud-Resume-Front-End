@@ -7,17 +7,17 @@
         // Note call is synchronous, delays should be minimal
         var req = new XMLHttpRequest();  
         req.open('GET', 
-        "https://cil7qg2oug.execute-api.us-east-1.amazonaws.com/Prod/count", 
+        "https://b0loqewbih.execute-api.us-east-1.amazonaws.com/Prod/count", 
         false);   
         req.send();  
         if(req.status == 200)
             {  
                 len = req.responseText.length;
                 // response text has opening and closing double quotes
-                console.log(req.responseText.substring(1, len-1));
+                console.log(req.responseText.substring(0));
                 // set field in footer
-                document.getElementById("loadcount").textContent = 
-                    req.responseText.substring(10, len-2);
+                document.getElementById("numberofvisits").textContent = 
+                    req.responseText.substring(0);
             }
         else {
             // NOT OK response, so log in console
