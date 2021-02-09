@@ -11,7 +11,7 @@
   <div class="page">
   <header>
     <h1>Kyron McKenna</h1>
-    <h2>DevOps Engineer</h2>
+    <h2>Cloud Engineer</h2>
     <ul class="contact">
       <li>
         <img src="images/email.svg" alt="email">
@@ -39,50 +39,72 @@
     <section class="content--main">
       <section class="summary">
         <h3 class="title">Summary</h3>
-        <p>I'm hard-working, driven, and most of all, eager to expand my knowledge. I strive to work in an evergrowing environment that's keen on making an impact. Teamwork and effective communication is something I value as an important aspect to accomplishing a goal. I'm interested in a role that utilizes a wide array of services that I can pickup and grow from. I am dedicated to proving my worth to the company I work for. I have the ability to relocate anywhere in the US.<p>
+        <p>Self-motivated Cloud Engineer passionate about the Cloud and its future. 
+          Available and currently looking for work, with the ability to relocate.
+          I pride myself on my ability to succeed in a fast-paced environment. 
+          I am ambitious and eager to advance my career and expand my knowledge in all things Cloud.<p>
       </section>
         
         
         
 <!--        Projects Column-->
       <section class='projects'>
-        <h3 class="title">Projects</h3>
+        <h3 class="title">Experience & Projects</h3>
           
           
 <!--          Project 1-->
         <article class="article">
-          <h4>thepainwall.com - Developer for a local small business</h4>
+          <h4>Full Stack Cloud Developer - The Pain Wall</h4>
           <div class="article--subtitle">
-            <h5>Lambda - S3 - RDS - CloudFront</h5>
+            <h5>EC2 - Terraform - Jenkins - CloudWatch</h5>
             <div class="separator--ver"></div>
             <a href="https://thepainwall.com/" target="_blank" rel="noopener noreferrer"><h5>DIRECT LINK</h5></a>
           </div>
           <ul>
-            <li>Succesfully re-hosted thepainwall.com WordPress through AWS with improved loading speeds</li>
-            <li>Web service hosted on EC2 instances with RDS for the database and Lambda for custom functions</li>
-            <li>Features CloudFront, ALB, Autoscaling, Route53 failover, S3, CloudFormation Stack, and Github with CI/CD pipeline</li>
+            <li>Migrated to AWS from on-premise, resulting in improved loading speeds and configuration management.</li>
+            <li>Infrastructure as Code implementation using Terraform for improved productivity in deployment tasks and Jenkins for CI/CD.</li>
+            <li>Maintain high availability and uptime of services
+              <ul style="padding-left:20px">
+                <li>99.8% monthly uptime SLO</li>
+                <li>Leveraged blue-green deployment processes that reduced unexpected downtimes due to deployments by 100%.</li>
+                <li>Utilized load balancers & autoscaling groups to handle increased traffic periods. Enabled CloudFront for caching.</li>
+              </ul></li>
+            <li>Setup & monitored CloudWatch metrics & dashboards to track performance and made necessary changes to reduce monthly costs.</li>
           </ul>
         </article>
         <div class="separator--hrz"></div>
           
 <!--            Project 2-->
          <article class="article">
-          <h4>Cloud Resume Challenge</h4>
+
+
+
+          <h4>Cloud Resume Challenge <font size="2px">- (Project)</font></h4>
+
+
+
+
+
           <div class="article--subtitle">
-            <h5>Lambda - S3 - DynamoDB</h5>
+            <h5>Lambda - S3 - DynamoDB - API Gateway - Docker - Python</h5>
             <div class="separator--ver"></div>
-            <a href="INSERT LINK HERE" target="_blank" rel="noopener noreferrer"><h5>DIRECT LINK</h5></a>
+            <a href="https://resume.kyronmckenna.com/" target="_blank" rel="noopener noreferrer"><h5>DIRECT LINK</h5></a>
           </div>
           <ul>
-            <li>Bullet 1</li>
-            <li>Bullet 2</li>
-            <li>You can read about what the Cloud Resume Challenge is INSERT HYPER HERE</li>
+            <li>Used S3 to host static resume website featuring a visitor counter. Set up HTTPS for security and enabled CloudFront for caching. Utilized Route53 for DNS operation.</li>
+            <li>	Wrote Lambda function using Python as runtime to retrieve current visitor count, stored in DynamdoDB, and update the count for each visit.</li>
+            <li>Setup API Gateway to accept requests from the web app, triggering the lambda function to communicate with the database.</li>
+            <li>Utilized Docker for SAM build operations.
+            <li>Converted infrastructure to code, leveraged SAM & GitHub Actions for rapid deployment and CI/CD.</li>
+            <li>Read about the Cloud Resume Challenge <a href="https://cloudresumechallenge.dev/instructions/"> HERE</a></li>
           </ul>
         </article>
-        <div class="separator--hrz"></div>
+        <!-- <div class="separator--hrz"></div> -->
       
+
 <!--          Project 3-->
-        <article class="article">
+
+        <!-- <article class="article">
           <h4>Blog - Work In Progress</h4>
           <div class="article--subtitle">
             <h5>Work - In - Progress</h5>
@@ -94,36 +116,9 @@
             <li>Bullet 2+84</li>
             <li>Bullet 3</li>
           </ul>
-        </article>
+        </article> -->
+
       </section>
-        
-<!-- 
-
-Open Source Experience
-      <section class="opensource">
-        <h3 class="title">Open Source Experience</h3>
-        <article class="article">
-          <div class="role">
-            <h4>Insert When Done</h4>
-            <div class="separator--ver"></div>
-            <h5>Role</h5>
-          </div>
-          <p>Insert Description</p>
-        </article>
-        <div class="separator--hrz"></div>
-        <article class="article">
-          <div class="role">
-            <h4>Insert When Done</h4>
-            <div class="separator--ver"></div>
-            <h5>Role</h5>
-          </div>
-          <p>Insert Description</p>
-        </article>
-      </section> 
-
--->
-        
-        
     </section>
       
       
@@ -134,18 +129,18 @@ Open Source Experience
         <section class="skillset">
           <h3 class="title">Skillset</h3>
           <ul class="tags">
-            <li>AWS (EC2, S3, Lambda, DynamoDB, CloudWatch, SAM, etc.)</li>
             <li>Python</li>
-            <li>Linux</li>
             <li>Terraform</li>
-            <li>CloudFormation</li>
-            <li>SAM</li>             
-            <li>Docker</li>
-            <li>Github</li>             
-            <li>SQL/NoSQL</li>
+            <li>Linux</li>
             <li>CI/CD</li>
-            <li>CLI</li>
-            <li>HTML/CSS</li>              
+            <li>HTML/CSS</li>
+            <li>Docker</li>            
+            <li>GitHub</li>  
+            <li>Shell</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Jenkins</li>
+            <li>AWS (EC2, S3, Lambda, DynamoDB, CloudWatch, Route53, SAM, & more)</li>             
           </ul>
         </section>
           
@@ -187,46 +182,7 @@ Open Source Experience
             </section>
           </article>
           <div class="separator--hrz"></div>
-            
-<!--            
-          <article class="article--cert">
-            <h4>AWS Certified Developer - Associate</h4>
-            <h5>Amazon Web Services (AWS)</h5>
-            <section>
-              <div>
-                <img src="images/date.svg" alt="date">
-                2020
-              </div>
-              <div>
-                <a href="INSERT LINK HERE" target="_blank" rel="noopener noreferrer">
-                  <img src="images/link.svg" alt="certificate">
-                  Certificate
-                </a>
-              </div>
-            </section>
-          </article>
-          <div class="separator--hrz"></div>
-            
-            
-          <article class="article--cert">
-            <h4>AWS Certified SysOps Administrator - Associate</h4>
-            <h5>Amazon Web Services (AWS)</h5>
-            <section>
-              <div>
-                <img src="images/date.svg" alt="date">
-                2020
-              </div>
-              <div>
-                <a href="INSERT LINK HERE" target="_blank" rel="noopener noreferrer">
-                  <img src="images/link.svg" alt="certificate">
-                  Certificate
-                </a>
-              </div>
-            </section>
-          </article>
-          <div class="separator--hrz"></div>
-            
-            
+              
           <article class="article--cert">
             <h4>Certified Cloud Practitioner</h4>
             <h5>Amazon Web Services (AWS)</h5>
@@ -243,12 +199,10 @@ Open Source Experience
               </div>
             </section>
           </article>
-          <div class="separator--hrz"></div>
-            
             
 
         </section>
-    -->
+        
 <!--          Interests-->
         <section class="interests">
           <h3 class="title">Interests</h3>
@@ -270,6 +224,6 @@ Open Source Experience
     <div id="numberofvisits"></div>
   </footer>
   </div>
-  <script src="./script.js"></script>
+<!--  <script src="./script.js"></script> -->
 </body>
 </html>
