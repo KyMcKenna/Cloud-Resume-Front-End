@@ -1,4 +1,4 @@
-Cloud Resume Challenge front end repository
+# Cloud Resume Challenge front end repository
 
 ---------------------------------------------
 
